@@ -4,6 +4,8 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
+    mavenCentral()
     jcenter()
 }
 
@@ -14,8 +16,8 @@ dependencies {
 
     testImplementation("org.assertj:assertj-core:3.14.0")
 
-    testImplementation("org.mockito:mockito-core:2.1.0")
-    testImplementation("org.mockito:mockito-junit-jupiter:2.1.0")
+    testImplementation("org.mockito:mockito-core:3.1.0")
+    testCompile("org.mockito:mockito-junit-jupiter:3.1.0")
 }
 
 application {
