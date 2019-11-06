@@ -1,7 +1,7 @@
 package com.aelmehdi.app;
 
 public class App {
-    public String getGreeting() {
+    String getGreeting() {
         return "Hello world.";
     }
 
