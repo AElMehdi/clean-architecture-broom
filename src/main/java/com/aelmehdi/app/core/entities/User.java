@@ -1,5 +1,7 @@
 package com.aelmehdi.app.core.entities;
 
+import java.util.Objects;
+
 public class User {
     private String name;
     private int age;
@@ -13,7 +15,7 @@ public class User {
         User user = (User) o;
 
         if (age != user.age) return false;
-        return name != null ? name.equals(user.name) : user.name == null;
+        return Objects.equals(name, user.name);
     }
 
     @Override

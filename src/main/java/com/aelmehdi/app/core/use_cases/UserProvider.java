@@ -1,5 +1,7 @@
 package com.aelmehdi.app.core.use_cases;
 
-interface UserProvider {
-    String getUser(int age);
+import com.aelmehdi.app.database.UserJpa;
+
+public interface UserProvider {
+    UserJpa getUserByAge(int age);
 }

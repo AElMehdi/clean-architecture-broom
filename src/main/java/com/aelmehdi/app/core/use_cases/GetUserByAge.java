@@ -9,6 +9,6 @@ public class GetUserByAge {
     }
 
     public String execute(int age) {
-        return userProvider.getUser(age);
+        return userProvider.getUserByAge(age);
     }
 }

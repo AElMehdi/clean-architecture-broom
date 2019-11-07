@@ -20,7 +20,7 @@ class GetUserByAgeTest {
 
     @Test
     void should_return_user_by_name() {
-        when(userProvider.getUser(25)).thenReturn("Mehdi");
+        when(userProvider.getUserByAge(25)).thenReturn("Mehdi");
 
         assertThat(getUserByAge.execute(25)).isEqualTo("Mehdi");
     }
