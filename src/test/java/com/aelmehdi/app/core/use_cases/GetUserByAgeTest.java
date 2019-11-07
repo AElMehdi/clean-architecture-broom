@@ -14,6 +14,7 @@ class GetUserByAgeTest {
 
     @Mock
     private UserProvider userProvider;
+
     @InjectMocks
     private GetUserByAge getUserByAge;
 
@@ -21,7 +22,7 @@ class GetUserByAgeTest {
     void should_return_user_by_name() {
         when(userProvider.getUser(25)).thenReturn("Mehdi");
 
-        assertThat(getUserByAge.getUser(25)).isEqualTo("Mehdi");
+        assertThat(getUserByAge.execute(25)).isEqualTo("Mehdi");
     }
 
 }

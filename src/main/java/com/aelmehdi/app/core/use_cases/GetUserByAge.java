@@ -8,7 +8,7 @@ public class GetUserByAge {
         this.userProvider = userProvider;
     }
 
-    public String getUser(int age) {
+    public String execute(int age) {
         return userProvider.getUser(age);
     }
 }
