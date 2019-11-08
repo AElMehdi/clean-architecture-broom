@@ -1,4 +1,4 @@
-package com.aelmehdi.dataproviders.database;
+package com.aelmehdi.app.dataproviders.database;
 
 import com.aelmehdi.app.core.entities.User;
 import com.aelmehdi.app.core.use_cases.UserProvider;

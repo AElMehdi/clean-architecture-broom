@@ -1,4 +1,4 @@
-package com.aelmehdi.dataproviders.database;
+package com.aelmehdi.app.dataproviders.database;
 
 public interface UserRepository {
    UserJpa findUserByAge(int age);
