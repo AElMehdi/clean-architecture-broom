@@ -1,5 +1,7 @@
 package com.aelmehdi.app.core.use_cases;
 
+import com.aelmehdi.app.core.entities.User;
+
 public class GetUserByAge {
 
     private UserProvider userProvider;
@@ -8,7 +10,7 @@ public class GetUserByAge {
         this.userProvider = userProvider;
     }
 
-    public String execute(int age) {
+    public User execute(int age) {
         return userProvider.getUserByAge(age);
     }
 }

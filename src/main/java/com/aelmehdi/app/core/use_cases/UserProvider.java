@@ -1,7 +1,7 @@
 package com.aelmehdi.app.core.use_cases;
 
-import com.aelmehdi.app.database.UserJpa;
+import com.aelmehdi.app.core.entities.User;
 
 public interface UserProvider {
-    UserJpa getUserByAge(int age);
+    User getUserByAge(int age);
 }

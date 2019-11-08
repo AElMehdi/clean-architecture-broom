@@ -8,6 +8,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import com.aelmehdi.app.core.entities.User;
 
 @ExtendWith(MockitoExtension.class)
 class GetUserByAgeTest {
@@ -20,9 +21,12 @@ class GetUserByAgeTest {
 
     @Test
     void should_return_user_by_name() {
-        when(userProvider.getUserByAge(25)).thenReturn("Mehdi");
+        User expectedUser = new User("Mehdi", 25);
+        when(userProvider.getUserByAge(25)).thenReturn(expectedUser);
 
-        assertThat(getUserByAge.execute(25)).isEqualTo("Mehdi");
+        User user = getUserByAge.execute(25);
+
+        assertThat(user).isEqualTo(expectedUser);
     }
 
 }

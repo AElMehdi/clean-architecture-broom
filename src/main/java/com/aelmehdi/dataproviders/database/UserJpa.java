@@ -1,4 +1,4 @@
-package com.aelmehdi.app.database;
+package com.aelmehdi.dataproviders.database;
 
 // Should be used for db mapping
 public class UserJpa {
@@ -8,5 +8,13 @@ public class UserJpa {
    public UserJpa(String name, int age) {
       this.name = name;
       this.age = age;
+   }
+
+   String getName() {
+      return name;
+   }
+
+   int getAge() {
+      return age;
    }
 }

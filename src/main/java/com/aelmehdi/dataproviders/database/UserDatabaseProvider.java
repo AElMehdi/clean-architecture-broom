@@ -1,5 +1,6 @@
-package com.aelmehdi.app.database;
+package com.aelmehdi.dataproviders.database;
 
+import com.aelmehdi.app.core.entities.User;
 import com.aelmehdi.app.core.use_cases.UserProvider;
 
 public class UserDatabaseProvider implements UserProvider {
@@ -12,7 +13,9 @@ public class UserDatabaseProvider implements UserProvider {
 
 
    @Override
-   public UserJpa getUserByAge(int age) {
-      return userRepository.findUserByAge(age);
+   public User getUserByAge(int age) {
+      UserJpa userByAge = userRepository.findUserByAge(age);
+
+      return new User(userByAge.getName(), userByAge.getAge());
    }
 }
