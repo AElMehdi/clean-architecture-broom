@@ -1,9 +1,9 @@
-package com.aelmehdi.app.entrypoints.console;
+package com.aelmehdi.footballstats.entrypoints.console;
 
 import static java.lang.System.*;
 
-import com.aelmehdi.app.core.entities.User;
-import com.aelmehdi.app.core.use_cases.GetUserByAge;
+import com.aelmehdi.footballstats.core.entities.User;
+import com.aelmehdi.footballstats.core.use_cases.GetUserByAge;
 
 public class DisplayUser {
 

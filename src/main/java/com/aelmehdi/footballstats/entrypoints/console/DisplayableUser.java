@@ -1,4 +1,4 @@
-package com.aelmehdi.app.entrypoints.console;
+package com.aelmehdi.footballstats.entrypoints.console;
 
 import java.util.StringJoiner;
 

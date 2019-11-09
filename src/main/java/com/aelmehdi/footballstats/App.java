@@ -1,4 +1,4 @@
-package com.aelmehdi.app;
+package com.aelmehdi.footballstats;
 
 public class App {
     String getGreeting() {

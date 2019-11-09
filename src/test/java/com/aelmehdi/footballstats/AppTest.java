@@ -1,4 +1,4 @@
-package com.aelmehdi.app;
+package com.aelmehdi.footballstats;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

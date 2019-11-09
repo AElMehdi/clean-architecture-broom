@@ -1,4 +1,4 @@
-package com.aelmehdi.app.dataproviders.database;
+package com.aelmehdi.footballstats.dataproviders.database;
 
 // Should be used for db mapping
 public class UserJpa {

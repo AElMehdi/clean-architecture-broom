@@ -1,4 +1,4 @@
-package com.aelmehdi.app.core.entities;
+package com.aelmehdi.footballstats.core.entities;
 
 import java.util.Objects;
 

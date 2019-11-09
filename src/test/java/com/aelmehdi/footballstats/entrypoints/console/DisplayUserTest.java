@@ -1,4 +1,4 @@
-package com.aelmehdi.app.entrypoints.console;
+package com.aelmehdi.footballstats.entrypoints.console;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -8,8 +8,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import com.aelmehdi.app.core.entities.User;
-import com.aelmehdi.app.core.use_cases.GetUserByAge;
+import com.aelmehdi.footballstats.core.entities.User;
+import com.aelmehdi.footballstats.core.use_cases.GetUserByAge;
 
 // TODO: Need to do better to test the 'console' not just the provider's method
 @ExtendWith(MockitoExtension.class)

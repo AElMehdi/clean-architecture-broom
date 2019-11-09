@@ -1,7 +1,7 @@
-package com.aelmehdi.app.dataproviders.database;
+package com.aelmehdi.footballstats.dataproviders.database;
 
-import com.aelmehdi.app.core.entities.User;
-import com.aelmehdi.app.core.use_cases.UserProvider;
+import com.aelmehdi.footballstats.core.entities.User;
+import com.aelmehdi.footballstats.core.use_cases.UserProvider;
 
 public class UserDatabaseProvider implements UserProvider {
 

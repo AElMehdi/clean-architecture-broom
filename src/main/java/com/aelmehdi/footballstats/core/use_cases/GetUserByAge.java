@@ -1,6 +1,6 @@
-package com.aelmehdi.app.core.use_cases;
+package com.aelmehdi.footballstats.core.use_cases;
 
-import com.aelmehdi.app.core.entities.User;
+import com.aelmehdi.footballstats.core.entities.User;
 
 public class GetUserByAge {
 
