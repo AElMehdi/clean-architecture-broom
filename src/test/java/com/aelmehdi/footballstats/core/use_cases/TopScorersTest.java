@@ -21,16 +21,20 @@ class TopScorersTest {
     private TopScorers topScorers;
 
     @Test
-    void should_return_liga_top_scorers() {
-        when(playerProvider.getTopScorers()).thenReturn(expectedTopScorers());
+    void should_return_la_liga_top_scorers_ordered() {
+        when(playerProvider.getTopScorers()).thenReturn(unorderedTopScorers());
 
-        assertThat(topScorers.execute()).containsAll(expectedTopScorers());
+        assertThat(topScorers.execute()).containsExactly(
+                player("Karim", "Benzema", 9),
+                player("Lionel", "Messi", 8),
+                player("Gerard", "Moreno", 8));
     }
 
-    private Iterable<Player> expectedTopScorers() {
+    private Iterable<Player> unorderedTopScorers() {
         return newArrayList(
                 player("Gerard", "Moreno", 8),
-                player("Lionel", "Messi", 5));
+                player("Karim", "Benzema", 9),
+                player("Lionel", "Messi", 8));
     }
 
     private Player player(String firstName, String lastName, int goals) {
