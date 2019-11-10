@@ -23,6 +23,30 @@ public class Player {
         return new PlayerBuilder();
     }
 
+    public String firstName() {
+        return firstName;
+    }
+
+    public String lastName() {
+        return lastName;
+    }
+
+    public String nationality() {
+        return nationality;
+    }
+
+    public int age() {
+        return age;
+    }
+
+    public int goals() {
+        return goals;
+    }
+
+    public int assists() {
+        return assists;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -7,6 +7,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.util.Lists.newArrayList;
 import static org.mockito.Mockito.when;
@@ -30,7 +32,7 @@ class TopScorersTest {
                 player("Gerard", "Moreno", 8));
     }
 
-    private Iterable<Player> unorderedTopScorers() {
+    private List<Player> unorderedTopScorers() {
         return newArrayList(
                 player("Gerard", "Moreno", 8),
                 player("Karim", "Benzema", 9),
