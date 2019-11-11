@@ -1,13 +1,16 @@
 package com.aelmehdi.footballstats.core.use_cases;
 
 import com.aelmehdi.footballstats.core.entities.Player;
+import org.springframework.stereotype.Component;
 
 import java.util.Comparator;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+@Component
 public class TopScorers {
+
     private PlayerProvider playerProvider;
 
     public TopScorers(PlayerProvider playerProvider) {
