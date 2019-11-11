@@ -7,6 +7,11 @@ plugins {
     id("io.spring.dependency-management") version "1.0.8.RELEASE"
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 repositories {
     mavenLocal()
     mavenCentral()
